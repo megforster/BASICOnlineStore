@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kid's Converse Sneakers</title>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/4e611744ca.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/GenericProductStyle.css">
+
+    <script src="../js/cart.js" async></script>
+    <link rel="icon" href="../Assets/BASIC logo.jpg">
+    <script>
+        function passValues() {
+            var imageSrc = document.getElementsByClassName("shop-item-image")[0].src
+            var productTitle = document.getElementsByClassName("shop-item-title")[0].innerText
+            var productPrice = document.getElementsByClassName("shop-item-price")[0].innerText
+            sessionStorage.setItem("image", imageSrc)
+            sessionStorage.setItem("title", productTitle)
+            sessionStorage.setItem("price", productPrice)
+            sessionStorage.setItem("URI", "http://localhost:63342/WorkingCopy/OnlineStore/Views/KidsSneaker.html")
+            return false;
+        }
+    </script>
+
+</head>
+<body>
+
+<div id="nav-placeholder">
+
+</div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("everypage.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+
+<div class = "containerProduct">
+    <div class = "row">
+        <div class = "col-md-5">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class = "shop-item-image " src="../Assets/StockImages/side.jpg" class="d-block w-100" alt="First Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Assets/StockImages/topside.jpg"  class="d-block w-100" alt="Second Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class = "col-md-7">
+            <p class="newItems text-center">NEW</p>
+            <h2 class = shop-item-title>Kid's Converse Black</h2>
+            <p>Product Code: ISRC2340</p>
+            <img src="../Assets/StockImages/5stars.png" width="150px">
+            <p class = "shop-item-price">$50.45</p>
+            <p><b>Brand:</b>Converse</p>
+            <button type ="button" class="cart shop-item-button">
+                <a href="ShoppingCart.html" onclick="passValues();">Add to cart</a>
+            </button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

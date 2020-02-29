@@ -1,0 +1,133 @@
+/*import fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans|Raleway|Roboto+Condensed|Source+Sans+Pro&display=swap');
+
+:root {
+    --light-gray: #2b3032a1;
+    --primary-color: #B9BC47;
+    --roboto: "Open+Sans+Condense", sans-serif;
+    --gugi: "PT+Sans";
+    --sofia: "Raleway";
+}
+
+.cart-header{
+    font-width: bold;
+    font-size: 1.2em;
+    color:black;
+    font-family: var(--sofia);
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid black;
+    margin-right:1.5em;
+    padding-bottom:10px;
+    margin-top:10px;
+}
+
+.section-header{
+    text-align: center;
+    font-family: var(--sofia);
+    color: #FF9F39;
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-item{
+   width:45%;
+    font-size: 1.2em;
+    color:#B9BC47;
+}
+
+.cart-price{
+    width:20%;
+    font-size: 1.2em;
+    color:#B9BC47;
+}
+
+.cart-quantity{
+    width:35%;
+    font-size: 1.2em;
+    color:#B9BC47;
+}
+
+.cart-item-title{
+    margin-left: .5em;
+    font-size: 1.2em;
+    font-family: var(--sofia);
+}
+
+.cart-item-image{
+    width:75px;
+    height:auto;
+}
+
+.btn-danger{
+    background-color: firebrick !important;
+    color:white !important;
+    border:none;
+    border-radius: .3em;
+    font-weight: bold;
+    font-family: var(--sofia);
+}
+
+.btn-danger:hover{
+    color:black !important;
+}
+
+.cart-quantity-input{
+    height:34px;
+    width:50px;
+    border-radius: 5px;
+    border:1px solid #B9BC47;
+    background-color: #eee;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right:25px;
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column{
+    border:none;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: var(--sofia);
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size:1.5em;
+    color:#B9BC47;
+    margin-right: 20px;
+}
+
+.cart-total-price{
+    font-size: 1.1em;
+    font-family: var(--sofia);
+}
+
+.btn-purchase{
+    background-color: #FF9F39 !important;
+    color:white !important;
+    border:none;
+    border-radius: .3em;
+    font-weight: bold;
+    display: block;
+    margin:40px auto 80px auto;
+    font-size: 1.75em;
+    font-family: var(--sofia);
+}
+
+.btn-purchase:hover{
+    color:black !important;
+}

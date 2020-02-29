@@ -1,0 +1,60 @@
+.containerProduct{
+    margin-top: 50px;
+}
+
+.newItems{
+    background:#FF9F39;
+    width:50px;
+    color:white;
+    font-size: 12px;
+    font-weight:bold;
+}
+
+.col-md-7{
+    color:#B9BC47;
+}
+
+.col-md-7 button{
+    background-color:#FF9F39!important;
+    padding:5px;
+}
+
+.col-md-7 button:hover{
+    background-color:#FF9F39!important;
+}
+
+.price{
+    color: #FF9F39;
+    font-size:26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+input{
+    height: 33px;
+    text-align: center;
+    width:30px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.cart a{
+    color:white;
+    text-decoration: none;
+}
+
+.cart a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF9F39' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF9F39' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
