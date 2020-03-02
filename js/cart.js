@@ -60,6 +60,7 @@ function removeCartItem(event) {
 
 }
 
+//after you click purchase the purchase button is unresponsive when it should say nothing in cart
 function purchaseClicked(){
     console.log("Purchase button was clicked")
     if(JSON.parse(sessionStorage.getItem("cart")).length>0){
@@ -69,7 +70,7 @@ function purchaseClicked(){
             cartItems.removeChild(cartItems.firstChild)
         }
         updateCartTotal()
-        sessionStorage.setItem("cart", null)
+        sessionStorage.removeItem("cart")
     }else{
         alert("You don't have anything in the cart to purchase!")
     }
